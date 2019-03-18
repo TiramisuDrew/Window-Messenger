@@ -7,6 +7,9 @@ var WindowMessenger = /** @class */ (function () {
         this._sourcesOfHandler = new Map();
         window.addEventListener('message', this.windowMessageEventHandler = this.windowMessageEventHandler.bind(this));
     }
+    WindowMessenger.getSingleton = function () {
+        return WindowMessenger._singleton || (WindowMessenger._singleton = new WindowMessenger());
+    };
     WindowMessenger.prototype.emit = function (event, data, destination, destinationHostname) {
         if (!destination)
             destination = window;

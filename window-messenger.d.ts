@@ -1,6 +1,8 @@
 /// <reference path="src/window-message.d.ts" />
 /// <reference path="src/window-message-handler.d.ts" />
 declare class WindowMessenger {
+    static getSingleton(): WindowMessenger;
+    private static _singleton;
     constructor();
     protected _handlersOfEvent: Map<string, WindowMessageHandler[]>;
     protected _sourcesOfHandler: Map<Function, string[]>;
