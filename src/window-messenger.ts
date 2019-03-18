@@ -3,13 +3,6 @@
 
 class WindowMessenger {
 
-    static getSingleton() {
-
-        return WindowMessenger._singleton || (WindowMessenger._singleton = new WindowMessenger());
-    }
-
-    private static _singleton: WindowMessenger;
-
     constructor() {
 
         window.addEventListener('message', this.windowMessageEventHandler = this.windowMessageEventHandler.bind(this));

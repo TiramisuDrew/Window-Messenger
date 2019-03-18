@@ -8,8 +8,8 @@
     ],
     "outDir": "./",
     "strict": true,
-    "esModuleInterop": true,
-    "declaration": true
+    "declaration": true,
+    "esModuleInterop": true
   },
   "files": [
     "./src/window-messenger.ts"
