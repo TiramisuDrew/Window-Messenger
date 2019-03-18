@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "none",
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "outDir": "./",
+    "strict": true,
+    "esModuleInterop": true,
+    "declaration": true
+  },
+  "files": [
+    "./src/window-messenger.ts"
+  ]
+}

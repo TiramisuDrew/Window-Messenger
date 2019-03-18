@@ -1,0 +1,25 @@
+{
+  "name": "window-messenger",
+  "version": "1.0.0",
+  "description": "A lightweight javascript package for subscrbing and emitting window messages",
+  "main": "window-messenger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TiramisuDrew/Window-Messenger.git"
+  },
+  "keywords": [
+    "Window",
+    "Message",
+    "Javascript",
+    "EventEmitter"
+  ],
+  "author": "TiramisuDrew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TiramisuDrew/Window-Messenger/issues"
+  },
+  "homepage": "https://github.com/TiramisuDrew/Window-Messenger#readme"
+}
