@@ -1,5 +1,5 @@
 {
-  "name": "window-messenger",
+  "name": "@tiramisudrew/window-messenger",
   "version": "1.0.0",
   "description": "A lightweight javascript package for subscrbing and emitting window messages",
   "main": "window-messenger.js",
