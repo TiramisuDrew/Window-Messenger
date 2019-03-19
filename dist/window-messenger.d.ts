@@ -4,6 +4,8 @@ interface WindowMessage {
 }
 declare type WindowMessageHandler = (data: any, origin: string, source: Window) => any;
 declare class WindowMessenger {
+    static getSingleton(): WindowMessenger;
+    private static _singleton;
     constructor();
     protected _handlersOfEvent: Map<string, WindowMessageHandler[]>;
     protected _sourcesOfHandler: Map<Function, string[]>;
