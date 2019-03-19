@@ -1,5 +1,9 @@
-/// <reference path="window-message.d.ts" />
-/// <reference path="window-message-handler.d.ts" />
+interface WindowMessage {
+    event: string;
+    data: any;
+}
+
+type WindowMessageHandler = (data: any, origin: string, source: Window) => any;
 
 class WindowMessenger {
 

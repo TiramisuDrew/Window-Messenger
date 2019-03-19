@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "none",
+    "module": "commonjs",
     "lib": [
       "es2015",
       "dom"
     ],
-    "outDir": "./",
+    "outDir": "dist/",
     "strict": true,
     "declaration": true,
     "esModuleInterop": true

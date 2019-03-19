@@ -1,6 +1,4 @@
 "use strict";
-/// <reference path="window-message.d.ts" />
-/// <reference path="window-message-handler.d.ts" />
 var WindowMessenger = /** @class */ (function () {
     function WindowMessenger() {
         this._handlersOfEvent = new Map();

@@ -1,5 +1,8 @@
-/// <reference path="src/window-message.d.ts" />
-/// <reference path="src/window-message-handler.d.ts" />
+interface WindowMessage {
+    event: string;
+    data: any;
+}
+declare type WindowMessageHandler = (data: any, origin: string, source: Window) => any;
 declare class WindowMessenger {
     constructor();
     protected _handlersOfEvent: Map<string, WindowMessageHandler[]>;
